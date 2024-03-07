@@ -1,6 +1,6 @@
 body {
   /* width: 20vh; */
-background-image: linear-gradient(to right, #656565, #6f7174, #757e82, #7b8c8c, #869992, #8aa08f, #95a588, #a7a981, #b4a771, #c5a364, #da9d5b, #f09359);
+background: radial-gradient(ellipse at center, #CE16AD 0%, #46A448 45%, #C532A9 100%);
 
 }
 /* /!\ You need to add vendor prefixes in order to render the CSS properly (or simply use http://leaverou.github.io/prefixfree/) /!\ */ #tridiv {
@@ -3598,4 +3598,56 @@ background-image: linear-gradient(to right, #656565, #6f7174, #757e82, #7b8c8c, 
 }
 .cyl-5 .face, .cyl-5 .side {
   background-color:#FFFFFF;
+}
+.scene {
+  animation: animate 27s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotateX(0deg)   rotateY(30deg);
+    }
+
+    7% {
+        transform:   rotateX(0deg) rotateY(40deg);
+    }
+    15% {
+        transform: rotateX(-4deg)  rotateY(60deg);
+    }
+    20% {
+        transform: rotateX(-7deg)  rotateY(60deg);
+    }
+    28% {
+        transform: rotateX(-9deg)  rotateY(80deg);
+    }
+    34% {
+        transform: rotateX(-12deg)  rotateY(100deg);
+    }
+    40% {
+        transform: rotateX(-18deg)  rotateY(120deg);
+    }
+    48% {
+        transform: rotateX(-23deg)  rotateY(130deg);
+    }
+    55% {
+        transform: rotateX(-29deg)  rotateY(150deg);
+    }
+    62% {
+        transform: rotateX(-34deg)  rotateY(180deg);
+    }
+    69% {
+        transform: rotateX(-28deg)  rotateY(140deg);
+    }
+    75% {
+        transform: rotateX(-22deg)  rotateY(100deg);
+    }
+    83% {
+        transform: rotateX(-17deg)  rotateY(80deg);
+    }
+    90% {
+        transform: rotateX(-10deg)  rotateY(44deg);
+    }
+    100% {
+        transform: rotateX(0deg)  rotateY(30deg);
+    }
 }
